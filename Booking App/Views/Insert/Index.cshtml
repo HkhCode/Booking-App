@@ -1,0 +1,30 @@
+﻿@model Booking_App.Models.member
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    @using(Html.BeginForm())
+    {
+        <span style="margin:15px;">@Html.LabelFor(m=>m.Id)</span>
+        <span style="margin:80px;">@Html.EditorFor(m=>m.Id)</span>
+        <br /><br />
+        <span style="margin:15px;">@Html.LabelFor(m=>m.Name)</span>
+        <span style="margin:55px;">@Html.EditorFor(m=>m.Name)</span>
+        <br/><br />
+        <span style="margin:15px;">@Html.LabelFor(m=>m.Booked_place)</span>
+        <span style="margin:1px;">@Html.EditorFor(m=>m.Booked_place)</span>
+        <br /><br />
+        <span style="margin:15px;"><input type="submit"/></span>
+    }
+
+</body>
+</html>

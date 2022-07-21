@@ -1,0 +1,32 @@
+﻿@model Booking_App.Models.user
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Login</title>
+</head>
+<body>
+    <h1>Login</h1>
+    @using(Html.BeginForm())
+    {
+        <div style="margin : 15px;">
+            @Html.LabelFor(m=>m.username)
+            @Html.EditorFor(m=>m.username)
+        </div>
+
+
+        <div style="margin:15px;">
+            @Html.LabelFor(m=>m.password)
+            @Html.EditorFor(m=>m.password)
+        </div>
+
+        <div style="margin:15px;"><input type="submit"/></div>
+    }
+</body>
+</html>
