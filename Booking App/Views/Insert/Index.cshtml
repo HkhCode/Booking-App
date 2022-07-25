@@ -1,4 +1,4 @@
-﻿@model Booking_App.Models.member
+﻿@model Booking_App.Models.Reservation
 
 @{
     Layout = null;
@@ -17,14 +17,14 @@
         <span style="margin:15px;">@Html.LabelFor(m=>m.Id)</span>
         <span style="margin:80px;">@Html.EditorFor(m=>m.Id)</span>
         <br /><br />
-        <span style="margin:15px;">@Html.LabelFor(m=>m.Name)</span>
-        <span style="margin:55px;">@Html.EditorFor(m=>m.Name)</span>
+        <span style="margin:15px;">@Html.LabelFor(m=>m.Reservar_Name)</span>
+        <span style="margin:55px;">@Html.EditorFor(m=>m.Reservar_Name)</span>
         <br/><br />
-        <span style="margin:15px;">@Html.LabelFor(m=>m.Booked_place)</span>
-        <span style="margin:1px;">@Html.EditorFor(m=>m.Booked_place)</span>
+        <span style="margin:15px;">@Html.LabelFor(m=>m.location.Name)</span>
+        <span style="margin:1px;">@Html.EditorFor(m=>m.location.Name)</span>
         <br /><br />
         <span style="margin:15px;"><input type="submit"/></span>
     }
-
+    <p>@Html.ActionLink("Log Out" , "SignOut" , "Home")</p>
 </body>
 </html>

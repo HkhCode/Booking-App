@@ -1,4 +1,4 @@
-﻿@model IEnumerable<Booking_App.Models.member>
+﻿@model IEnumerable<Booking_App.Models.Reservation>
 
 @{
     Layout = null;
@@ -27,12 +27,13 @@
                    
                     <tr>
                         <th scope="row">@item.Id</th>
-                        <td>@item.Name</td>
-                        <td>@item.Booked_place</td>
+                        <td>@item.Reservar_Name</td>
+                        <td>@item.location.Name</td>
                     </tr>
                 }
   </tbody>
 </table>
-@Html.ActionLink("Inser A New Record ... " , "index" , "insert")
+<p>@Html.ActionLink("Inser A New Record ... " , "index" , "insert")</p>
+<p>@Html.ActionLink("Log Out" , "SignOut" , "Home")</p>
 </body>
 </html>

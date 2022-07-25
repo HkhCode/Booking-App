@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Projects\\Job\\C#\\Asp.net\\Booking App\\Booking App\\Booking App.csproj": {}
+    "D:\\Projects\\Job\\C#\\Asp.net\\Booking App\\Booking-App\\Booking App\\Booking App.csproj": {}
   },
   "projects": {
-    "D:\\Projects\\Job\\C#\\Asp.net\\Booking App\\Booking App\\Booking App.csproj": {
+    "D:\\Projects\\Job\\C#\\Asp.net\\Booking App\\Booking-App\\Booking App\\Booking App.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\Job\\C#\\Asp.net\\Booking App\\Booking App\\Booking App.csproj",
+        "projectUniqueName": "D:\\Projects\\Job\\C#\\Asp.net\\Booking App\\Booking-App\\Booking App\\Booking App.csproj",
         "projectName": "Booking App",
-        "projectPath": "D:\\Projects\\Job\\C#\\Asp.net\\Booking App\\Booking App\\Booking App.csproj",
+        "projectPath": "D:\\Projects\\Job\\C#\\Asp.net\\Booking App\\Booking-App\\Booking App\\Booking App.csproj",
         "packagesPath": "C:\\Users\\Hossein\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\Job\\C#\\Asp.net\\Booking App\\Booking App\\obj\\",
+        "outputPath": "D:\\Projects\\Job\\C#\\Asp.net\\Booking App\\Booking-App\\Booking App\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\Visual Studio Shared Components and Tools\\NuGetPackages"

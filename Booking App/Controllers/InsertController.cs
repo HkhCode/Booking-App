@@ -15,10 +15,37 @@ namespace Booking_App.Controllers
                 return Redirect("Home/Login");
         }
         [HttpPost]
-        public ActionResult Index(member _member)
+        public ActionResult Index(Reservation reserved)
         {
-            members_data.Add_member(_member);
-            return View("Index");
+            int result = 0;
+            foreach (var item in Reservation_data.getReservations())
+            {
+                if (item.location.Name == reserved.location.Name)
+                {
+                    result = 0;
+                    break;
+                }
+                else
+                {
+                    result = 1;
+                }
+            }
+            if (result == 1)
+            {
+                Reservation_data.addReservation(reserved);
+                return Redirect("Home/Index");
+            }
+            else
+            {
+                return View("Error" , reserved);
+            }
+        }
+        public IActionResult Edit()
+        {
+            if (User_Access.Has_Access())
+                return View();
+            else
+                return Redirect("Home/Login");
         }
     }
 }

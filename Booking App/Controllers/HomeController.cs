@@ -9,7 +9,7 @@ namespace Booking_App.Controllers
         public ActionResult Index()
         {
             if (User_Access.Has_Access())
-                return View(members_data.return_member());
+                return View(Reservation_data.getReservations());
             else
             {
                 return RedirectToAction("Login");
@@ -23,11 +23,6 @@ namespace Booking_App.Controllers
         public ActionResult Login(user _user)
         {
             int result = 0;
-            //List<user> users = new List<user>();
-            //foreach(var item in users_data.return_users())
-            //{
-            //    users.Add(item);
-            //}
             foreach(var item in users_data.return_users())
             {
                 if (item.username == _user.username && item.password == _user.password)
@@ -44,6 +39,11 @@ namespace Booking_App.Controllers
             {
                 return RedirectToAction("Login");
             }
+        }
+        public IActionResult SignOut()
+        {
+            User_Access.Deny_Access();
+            return RedirectToAction("Login");
         }
     }
 }

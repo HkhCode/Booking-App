@@ -1,0 +1,23 @@
+﻿@model Booking_App.Models.Reservation
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Error</title>
+</head>
+<body>
+    <h1>Error</h1>
+    <p>
+        This Location Is Already Reserved
+    </p>
+    <p>@Model.location.Name</p>
+    <p>@Html.ActionLink("Go Back To Insert ... " , "Index" , "Insert")</p>
+    <p>@Html.ActionLink("Log Out" , "SignOut" , "Home")</p>
+</body>
+</html>
